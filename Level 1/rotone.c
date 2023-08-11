@@ -33,7 +33,7 @@ void	rotone(char *str)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 			str[i] = (str[i] - 'A' + 1) % 26 + 'A';
-		if (str[i] >= 'a' && str[i] <= 'z')
+		else if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = (str[i] - 'a' + 1) % 26 + 'a';
 		ft_putchar(str[i]);
 		i++;

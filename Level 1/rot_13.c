@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*   Assignment name  : rot_13                                                */
-/*   Expected files   : rot_13.c                                              */
-/*   Allowed functions: write                                                 */
-/*   -----------------------------------------------------------------------  */
+/*                                                        :::      ::::::::   */
+/*   rot_13.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sr.lilitha <sr.lilitha@student.42.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: Invalid date        by ing and dis       #+#    #+#             */
+/*   Updated: 2023/05/04 08:16:41 by sr.lilitha       ###   ########.fr       */
 /*                                                                            */
-/*   Write a program that takes a string and displays it, replacing each of   */
-/*   its letters by the letter 13 spaces ahead in alphabetical order.         */
-/*                                                                            */
-/*   'z' becomes 'm' and 'Z' becomes 'M'. Case remains unaffected.            */
-/*                                                                            */
+/* ************************************************************************** */
+
 /*   The output will be followed by a newline.                                */
 /*                                                                            */
 /*   If the number of arguments is not 1, the program displays a newline.     */
@@ -32,7 +32,7 @@ void	rot_13(char *str)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 			str[i] = (str[i] - 'A' + 13) % 26 + 'A';
-		if (str[i] >= 'a' && str[i] <= 'z')
+		else if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = (str[i] - 'a' + 13) % 26 + 'a';
 		ft_putchar(str[i]);
 		i++;
@@ -41,7 +41,7 @@ void	rot_13(char *str)
 
 int	main(int argc, char **argv)
 {
-	if (argc == 2) 
+	if (argc == 2)
 		rot_13(argv[1]);
 	ft_putchar('\n');
 	return (0);

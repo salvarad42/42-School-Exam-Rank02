@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*  Assignment name  : fizzbuzz                                               */
-/*  Expected files   : fizzbuzz.c                                             */
-/*  Allowed functions: write                                                  */
-/*  ------------------------------------------------------------------------  */
+/*                                                        :::      ::::::::   */
+/*   fizzfuzz.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sr.lilitha <sr.lilitha@student.42.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: Invalid date        by umbers from       #+#    #+#             */
+/*   Updated: 2023/05/04 10:46:39 by sr.lilitha       ###   ########.fr       */
 /*                                                                            */
-/*  Write a program that prints the numbers from 1 to 100, each separated by  */
-/*  a newline.                                                                */
-/*                                                                            */
-/*  If the number is a multiple of 3, it prints 'fizz' instead.               */
-/*                                                                            */
+/* ************************************************************************** */
+
 /*  If the number is a multiple of 5, it prints 'buzz' instead.               */
 /*                                                                            */
 /*  If the number is both a multiple of 3 and a multiple of 5, it prints      */
